@@ -1,0 +1,10 @@
+<% @items.each do |item| %>
+  <h2><%= item.type_dish %></h2>
+  <p><%= item.name %></p>
+  <p><%= item.description %></p>
+  <p><%= item.price %>$</p>
+<% end %>
+
+<div class="btn btn-info">
+  <%= link_to 'new', new_item_path %>
+</div>
